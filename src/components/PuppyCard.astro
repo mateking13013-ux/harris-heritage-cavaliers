@@ -114,7 +114,7 @@ const { puppies } = Astro.props;
 
           <div class="buttons-row">
             <a href="/contact" class="btn btn-primary btn-desktop-only">Contact Us</a>
-            <a href={`sms:+14432263475?&body=${encodeURIComponent(`Hello, I am interested in this Cavalier King Charles Spaniel Puppy ${puppy.name}\nwebsite: https://harrisheritagecavaliers.com/available-puppies`)}`} class="btn btn-primary btn-mobile-only">Send Text</a>
+            <a href={`sms:+15550001234?&body=${encodeURIComponent(`Hello, I am interested in this Cavalier King Charles Spaniel Puppy ${puppy.name}\nwebsite: https://harrisheritagecavaliers.com/available-puppies`)}`} class="btn btn-primary btn-mobile-only">Send Text</a>
             <button type="button" class="btn btn-outline" onclick={`openContactPopup('${puppy.name}', '${puppy.image}', '${puppy.breedName} · ${puppy.sex} · ${puppy.age}', ${puppy.price})`}>Contact Us</button>
           </div>
         </div>
