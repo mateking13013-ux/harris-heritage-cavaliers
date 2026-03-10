@@ -1,0 +1,1 @@
+import"./hoisted.Bc9LPm13.js";document.querySelectorAll(".faq-item .faq-header").forEach(t=>{t.addEventListener("click",()=>{const e=t.closest(".faq-item"),s=e?.classList.contains("open");e?.classList.toggle("open",!s),t.setAttribute("aria-expanded",String(!s))})});

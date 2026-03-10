@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+import StepCard from '../components/StepCard.astro';
+---
+
+<BaseLayout
+  title="Vaccinations | Harris Heritage Cavaliers"
+  description="Learn about the vaccination schedule and health protocols for Cavalier King Charles Spaniel puppies from Harris Heritage Cavaliers."
+  keywords="Cavalier puppy vaccinations, puppy vaccine schedule, DHPP vaccine, Cavalier health protocol"
+>
+  <PageHeader
+    title="Vaccinations"
+    subtitle="Every Harris Heritage Cavaliers puppy comes with an up-to-date vaccination record to ensure a healthy start."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Vaccination Protocol</h2>
+      <p>At Harris Heritage Cavaliers, we follow a veterinarian-recommended vaccination schedule to protect your puppy from common canine diseases. All puppies receive age-appropriate vaccinations before going to their new homes.</p>
+
+      <h3>Core Vaccinations</h3>
+      <div class="steps-grid">
+        <StepCard number="1" title="6-8 Weeks">
+          First DHPP vaccination (Distemper, Hepatitis, Parainfluenza, Parvovirus)
+        </StepCard>
+        <StepCard number="2" title="10-12 Weeks">
+          Second DHPP booster vaccination
+        </StepCard>
+        <StepCard number="3" title="14-16 Weeks">
+          Third DHPP booster and Rabies vaccination (administered by your veterinarian)
+        </StepCard>
+        <StepCard number="4" title="Annual">
+          Annual DHPP booster and Rabies as required by state law
+        </StepCard>
+      </div>
+
+      <h3>Deworming Protocol</h3>
+      <p>All puppies receive a complete internal deworming treatment starting at 2 weeks of age and continuing every 2 weeks until they go to their new homes. This protects against common intestinal parasites including roundworms, hookworms, and coccidia.</p>
+
+      <InfoBox type="info" title="Included With Every Puppy">
+        <ul>
+          <li>Up-to-date vaccination record</li>
+          <li>Complete deworming history</li>
+          <li>Veterinary health certificate</li>
+          <li>Recommended vaccination schedule for your veterinarian</li>
+        </ul>
+      </InfoBox>
+
+      <h3>Additional Recommended Vaccinations</h3>
+      <p>Depending on your location and lifestyle, your veterinarian may recommend additional vaccinations such as:</p>
+      <ul>
+        <li><strong>Bordetella</strong> — Recommended if your puppy will be in daycare, boarding, or dog parks</li>
+        <li><strong>Leptospirosis</strong> — Recommended in areas with wildlife exposure or standing water</li>
+        <li><strong>Canine Influenza</strong> — Recommended in areas with known outbreaks</li>
+        <li><strong>Lyme Disease</strong> — Recommended in tick-endemic regions</li>
+      </ul>
+
+      <InfoBox type="tip" title="Important Reminder">
+        <p>We strongly recommend that your puppy see a veterinarian within 72 hours of arriving at your home. This establishes a baseline health record and is required to maintain the validity of our health guarantee.</p>
+      </InfoBox>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container li strong {
+    color: #2a2a2a;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

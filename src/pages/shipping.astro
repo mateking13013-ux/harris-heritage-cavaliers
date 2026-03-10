@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+import StepCard from '../components/StepCard.astro';
+import FactCard from '../components/FactCard.astro';
+---
+
+<BaseLayout
+  title="Shipping & Delivery | Harris Heritage Cavaliers"
+  description="Learn about our safe puppy shipping and delivery options throughout the United States and Canada. In-cabin flight nanny service available."
+  keywords="puppy shipping, Cavalier puppy delivery, flight nanny puppy, puppy delivery USA, puppy shipping Canada"
+>
+  <PageHeader
+    title="Shipping & Delivery"
+    subtitle="Safe and comfortable delivery options for your new Cavalier King Charles Spaniel puppy throughout the US and Canada."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Delivery Options</h2>
+      <p>At Harris Heritage Cavaliers, we want to make sure your new puppy arrives safely and comfortably. We offer several delivery options to accommodate families across the United States and Canada.</p>
+
+      <h3>In-Person Pickup</h3>
+      <p>We always recommend picking up your puppy in person when possible. This gives you the opportunity to meet us, see our home, and bond with your new puppy from the very first moment. There is no additional cost for in-person pickup.</p>
+
+      <h3>Flight Nanny Service</h3>
+      <p>For families who cannot travel to us, we offer a professional in-cabin flight nanny service. Your puppy will travel in the cabin of the airplane with an experienced pet nanny who ensures they are safe, comfortable, and stress-free throughout the journey.</p>
+
+      <div class="facts-grid">
+        <FactCard title="Airport Delivery Cost">
+          $185 - $240 depending on your location. This covers the flight nanny's travel expenses and care of your puppy during transit.
+        </FactCard>
+        <FactCard title="Travel Comfort">
+          Your puppy travels in an airline-approved carrier in the cabin — never in cargo. They are held, comforted, and cared for the entire flight.
+        </FactCard>
+      </div>
+
+      <h3>How It Works</h3>
+      <div class="steps-grid">
+        <StepCard number="1" title="Reserve Your Puppy">
+          Once you have selected your puppy and completed the adoption process, we will coordinate a delivery date.
+        </StepCard>
+        <StepCard number="2" title="Flight Coordination">
+          We arrange the flight and assign a trusted flight nanny. You will receive the flight details in advance.
+        </StepCard>
+        <StepCard number="3" title="Airport Pickup">
+          Meet your flight nanny and your new puppy at the airport. Your puppy arrives with all paperwork and a travel kit.
+        </StepCard>
+        <StepCard number="4" title="Welcome Home">
+          Your puppy arrives healthy, happy, and ready to start their new life with your family!
+        </StepCard>
+      </div>
+
+      <InfoBox type="info" title="What's Included With Delivery">
+        <ul>
+          <li>Airline-approved travel carrier</li>
+          <li>Health certificate for travel</li>
+          <li>Comfort blanket with familiar scent</li>
+          <li>Food and water for the journey</li>
+          <li>All puppy documentation and records</li>
+          <li>Welcome kit with food sample and care guide</li>
+        </ul>
+      </InfoBox>
+
+      <h3>Service Area</h3>
+      <p>We ship puppies throughout the <strong>United States</strong> and <strong>Canada</strong>. Flight nanny delivery is available to all major airports. If you are located in a remote area, we will work with you to find the most convenient airport.</p>
+
+      <InfoBox type="tip" title="Ready to Bring Your Puppy Home?">
+        <p><a href="/contact">Contact us</a> to discuss delivery options and schedule the arrival of your new Cavalier King Charles Spaniel puppy.</p>
+      </InfoBox>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container li strong {
+    color: #2a2a2a;
+  }
+
+  .content-container a {
+    color: #2C3E6B;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .facts-grid,
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

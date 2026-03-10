@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+import FactCard from '../components/FactCard.astro';
+---
+
+<BaseLayout
+  title="Puppy Care Guide | Harris Heritage Cavaliers"
+  description="Essential care tips for your new Cavalier King Charles Spaniel puppy. Feeding, grooming, exercise, and health advice from Harris Heritage Cavaliers."
+  keywords="Cavalier puppy care, Cavalier King Charles Spaniel care guide, puppy feeding guide, Cavalier grooming"
+>
+  <PageHeader
+    title="Puppy Care Guide"
+    subtitle="Everything you need to know to give your new Cavalier King Charles Spaniel puppy the best start in life."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Caring for Your New Cavalier Puppy</h2>
+      <p>Congratulations on your new Cavalier King Charles Spaniel! Here is a comprehensive guide to help you provide the best care for your new family member.</p>
+
+      <h3>Feeding</h3>
+      <p>A healthy diet is the foundation of your puppy's well-being. We recommend a high-quality puppy food formulated for small breeds.</p>
+      <ul>
+        <li><strong>8-12 weeks:</strong> Feed 3-4 small meals per day</li>
+        <li><strong>3-6 months:</strong> Feed 3 meals per day</li>
+        <li><strong>6-12 months:</strong> Transition to 2 meals per day</li>
+        <li><strong>Adult:</strong> Continue with 2 meals per day</li>
+      </ul>
+
+      <InfoBox type="tip" title="Food Transition">
+        <p>We send a sample of the food your puppy is currently eating in the welcome kit. Gradually transition to your chosen food over 7-10 days to avoid digestive upset. Mix increasing amounts of the new food with decreasing amounts of the current food.</p>
+      </InfoBox>
+
+      <h3>Grooming</h3>
+      <p>Cavalier King Charles Spaniels have a beautiful medium-length, silky coat that requires regular maintenance.</p>
+      <ul>
+        <li><strong>Brushing:</strong> Brush 2-3 times per week to prevent mats, especially around the ears and feathering</li>
+        <li><strong>Bathing:</strong> Bathe every 2-4 weeks or as needed</li>
+        <li><strong>Ears:</strong> Check and clean ears weekly — Cavaliers are prone to ear infections due to their floppy ears</li>
+        <li><strong>Nails:</strong> Trim nails every 2-3 weeks</li>
+        <li><strong>Teeth:</strong> Brush teeth several times per week with dog-safe toothpaste</li>
+      </ul>
+
+      <h3>Exercise</h3>
+      <p>Cavaliers are moderately active dogs who enjoy daily walks and playtime. They are adaptable to both active and relaxed lifestyles.</p>
+      <ul>
+        <li>Puppies: Short play sessions throughout the day (avoid overexertion)</li>
+        <li>Adults: 30-60 minutes of exercise daily</li>
+        <li>Great activities: walks, fetch, agility, and simply cuddling on the couch</li>
+      </ul>
+
+      <h3>Health Considerations</h3>
+      <p>While Cavaliers are generally healthy dogs, there are some breed-specific health considerations to be aware of:</p>
+
+      <div class="facts-grid">
+        <FactCard title="Heart Health">
+          Mitral Valve Disease is the most common concern. Regular cardiac checkups are recommended starting at age 1.
+        </FactCard>
+        <FactCard title="Eye Care">
+          Annual eye exams can detect early signs of cataracts or other conditions common in the breed.
+        </FactCard>
+        <FactCard title="Joint Health">
+          Maintain a healthy weight to reduce stress on joints. Patellar luxation screening is recommended.
+        </FactCard>
+        <FactCard title="Ear Health">
+          Their long, floppy ears require regular cleaning to prevent infections. Keep ears dry and clean.
+        </FactCard>
+      </div>
+
+      <h3>Socialization & Training</h3>
+      <p>Cavaliers are eager to please and respond well to positive reinforcement training. Early socialization is key to developing a confident, well-adjusted adult dog.</p>
+      <ul>
+        <li>Begin basic obedience training immediately using positive methods</li>
+        <li>Expose your puppy to different people, animals, sounds, and environments</li>
+        <li>Start crate training early — your puppy has already begun crate training basics with us</li>
+        <li>Enroll in a puppy kindergarten class for structured socialization</li>
+      </ul>
+
+      <InfoBox type="info" title="Lifetime Support">
+        <p>Remember, Harris Heritage Cavaliers offers lifetime breeder support. If you ever have questions about your puppy's care, health, or behavior, please do not hesitate to <a href="/contact">reach out to us</a>. We are always here to help!</p>
+      </InfoBox>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container li strong {
+    color: #2a2a2a;
+  }
+
+  .content-container a {
+    color: #2C3E6B;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .facts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

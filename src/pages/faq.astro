@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import FaqItem from '../components/FaqItem.astro';
+import ExpensesSection from '../components/ExpensesSection.astro';
+import { faqs } from '../data/faqs';
+---
+
+<BaseLayout
+  title="Frequently Asked Questions | Harris Heritage Cavaliers"
+  description="Find answers to common questions about Cavalier King Charles Spaniel puppies, health guarantees, vaccinations, shipping, pricing, and more at Harris Heritage Cavaliers."
+  keywords="Cavalier King Charles Spaniel FAQ, puppy questions, Cavalier breeder FAQ, puppy health guarantee questions"
+>
+  <PageHeader
+    title="Frequently Asked Questions"
+    subtitle="Everything you need to know about our Cavalier King Charles Spaniel puppies and the adoption process."
+  />
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <h2 class="faq-heading">Common Questions</h2>
+      <div class="faq-list">
+        {faqs.map((faq) => (
+          <FaqItem question={faq.question}>
+            <p>{faq.answer}</p>
+          </FaqItem>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ExpensesSection />
+</BaseLayout>
+
+<style>
+  .faq-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2C3E6B;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 3rem 1rem;
+    }
+
+    .faq-heading {
+      font-size: 1.5rem;
+    }
+  }
+</style>

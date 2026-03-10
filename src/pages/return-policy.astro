@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+---
+
+<BaseLayout
+  title="Return Policy | Harris Heritage Cavaliers"
+  description="Review the return and rehoming policy for Cavalier King Charles Spaniel puppies from Harris Heritage Cavaliers."
+  keywords="puppy return policy, Cavalier puppy rehoming, Harris Heritage Cavaliers return policy"
+>
+  <PageHeader
+    title="Return Policy"
+    subtitle="Our policies for returns, rehoming, and our commitment to the lifelong welfare of every puppy we breed."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Our Return & Rehoming Policy</h2>
+      <p>At Harris Heritage Cavaliers, we are committed to the lifelong welfare of every puppy we breed. We understand that life circumstances can change, and we want to ensure that every one of our puppies is always in a safe, loving home.</p>
+
+      <h3>Lifetime Return Commitment</h3>
+      <p>If at any point during your puppy's life you are unable to keep them, Harris Heritage Cavaliers will always accept the puppy back or assist in finding a suitable new home. This is a lifetime commitment we make to every puppy we breed.</p>
+
+      <InfoBox type="warning" title="Never Surrender to a Shelter">
+        <p>Under no circumstances should a Harris Heritage Cavaliers puppy be surrendered to a shelter, rescue organization, or given to an unknown third party. You must contact us first, and we will work with you to find the best solution.</p>
+      </InfoBox>
+
+      <h3>72-Hour Health Return Policy</h3>
+      <p>If your puppy is found to have a serious health issue by a licensed veterinarian within 72 hours of arriving at your home, you may return the puppy for a full refund or receive a replacement puppy. The following conditions apply:</p>
+      <ul>
+        <li>A written veterinary report must be provided within the 72-hour window</li>
+        <li>The condition must be a serious health concern that was not disclosed</li>
+        <li>Conditions caused by stress, environment change, or minor issues (such as mild digestive upset) are not covered under this policy</li>
+        <li>The puppy must be returned in the same condition as received</li>
+      </ul>
+
+      <h3>Deposit Policy</h3>
+      <ul>
+        <li>The $200 reservation deposit is <strong>non-refundable</strong></li>
+        <li>If the puppy becomes unavailable due to a health issue on our end, the deposit will be fully refunded or transferred to another available puppy</li>
+        <li>If the buyer changes their mind after placing a deposit, the deposit is forfeited</li>
+      </ul>
+
+      <h3>Rehoming Assistance</h3>
+      <p>If you need to rehome your Cavalier at any time, please contact us. We will:</p>
+      <ul>
+        <li>Help screen potential new families</li>
+        <li>Provide guidance on the rehoming process</li>
+        <li>Accept the puppy back into our home if a suitable new family cannot be found</li>
+        <li>Ensure the transition is smooth and stress-free for the dog</li>
+      </ul>
+
+      <InfoBox type="info" title="Contact Us">
+        <p>If you have any questions about our return or rehoming policies, please <a href="/contact">contact us</a>. Our goal is always to ensure the best possible outcome for our puppies and their families.</p>
+      </InfoBox>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container li strong {
+    color: #2a2a2a;
+  }
+
+  .content-container a {
+    color: #2C3E6B;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

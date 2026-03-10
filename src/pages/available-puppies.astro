@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import PuppyCard from '../components/PuppyCard.astro';
+import ContactPopup from '../components/ContactPopup.astro';
+import { puppies } from '../data/puppies';
+---
+
+<BaseLayout title="Available Puppies | Harris Heritage Cavaliers">
+  <PageHeader
+    title="Available Puppies"
+    subtitle="Meet our beautiful Cavalier King Charles Spaniel puppies looking for their forever homes"
+  />
+  <PuppyCard puppies={puppies} />
+  <ContactPopup />
+</BaseLayout>

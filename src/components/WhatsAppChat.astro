@@ -1,0 +1,17 @@
+---
+// Floating Contact Button - PetZo style
+const emailAddress = "harrisheritagecavaliers@gmail.com";
+const subject = "Inquiry about Cavalier King Charles Spaniel Puppies";
+const emailUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+---
+
+<a href={emailUrl} class="floating-contact" aria-label="Email us">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+</a>
+
+<style>
+  .floating-contact { display: flex; position: fixed; bottom: 20px; right: 20px; z-index: 9999; width: 60px; height: 60px; border-radius: 50%; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(245, 197, 24, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; background: #F5C518; color: #1A1A1A; text-decoration: none; }
+  .floating-contact:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(245, 197, 24, 0.5); color: #1A1A1A; }
+  .floating-contact svg { width: 28px; height: 28px; }
+  @media (max-width: 768px) { .floating-contact { width: 55px; height: 55px; bottom: 15px; right: 15px; } .floating-contact svg { width: 24px; height: 24px; } }
+</style>

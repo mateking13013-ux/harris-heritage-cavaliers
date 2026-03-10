@@ -1,0 +1,60 @@
+---
+import '../styles/global.css';
+import TopBar from '../components/TopBar.astro';
+import MainHeader from '../components/MainHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import WhatsAppChat from '../components/WhatsAppChat.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  ogUrl?: string;
+}
+
+const {
+  title,
+  description = "Harris Heritage Cavaliers - Premium Cavalier King Charles Spaniel puppies raised with love in the USA. Health guaranteed, family-raised, and ready to fill your home with joy.",
+  keywords = "Cavalier King Charles Spaniel puppies, Cavalier breeder USA, puppies for sale, AKC Cavalier, Harris Heritage Cavaliers",
+  ogTitle,
+  ogDescription,
+  ogType = "website",
+  ogUrl
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords}>
+  <meta name="author" content="Harris Heritage Cavaliers">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content={ogTitle || title}>
+  <meta property="og:description" content={ogDescription || description}>
+  <meta property="og:type" content={ogType}>
+  {ogUrl && <meta property="og:url" content={ogUrl}>}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F436;</text></svg>">
+
+  <title>{title}</title>
+</head>
+<body>
+  <TopBar />
+  <MainHeader />
+
+  <main>
+    <slot />
+  </main>
+
+  <SiteFooter />
+  <WhatsAppChat />
+</body>
+</html>

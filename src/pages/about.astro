@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import AboutSection from '../components/AboutSection.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+---
+
+<BaseLayout
+  title="About Us | Harris Heritage Cavaliers"
+  description="Learn about Harris Heritage Cavaliers — a family breeder with over 18 years of experience raising healthy, well-socialized Cavalier King Charles Spaniel puppies. AKC Breeder of Merit."
+  keywords="about Harris Heritage Cavaliers, Cavalier breeder, AKC Breeder of Merit, family Cavalier breeder USA"
+>
+  <PageHeader
+    title="About Us"
+    subtitle="Get to know the family behind Harris Heritage Cavaliers and our commitment to breeding exceptional Cavalier King Charles Spaniels."
+  />
+  <AboutSection />
+  <WhyChooseUs />
+
+  <section class="about-detail-section">
+    <div class="about-detail-container">
+      <h2>Our Story</h2>
+      <p>Harris and Amber started Harris Heritage Cavaliers over 18 years ago with a simple mission: to breed the healthiest, happiest Cavalier King Charles Spaniels possible. What began as a passion for the breed has grown into a trusted breeding program recognized as AKC Breeders of Merit.</p>
+      <p>Every one of our puppies is raised in our family home, surrounded by children, other pets, and everyday household activities. This ensures that when your puppy arrives at your door, they are confident, well-socialized, and ready to become a cherished member of your family.</p>
+      <h3>Health Testing Program</h3>
+      <p>We are committed to the long-term health of the Cavalier King Charles Spaniel breed. All of our breeding dogs undergo comprehensive health testing including:</p>
+      <ul>
+        <li><strong>OFA Heart Certification</strong> — Echocardiogram by a board-certified cardiologist</li>
+        <li><strong>CERF Eye Examination</strong> — Annual eye exam by a veterinary ophthalmologist</li>
+        <li><strong>OFA Patella Evaluation</strong> — Screening for luxating patella</li>
+        <li><strong>DNA Testing</strong> — For Curly Coat Dry Eye Syndrome and Episodic Falling Syndrome</li>
+      </ul>
+      <p>We believe that responsible breeding starts with responsible health testing. Every decision we make is guided by our love for the breed and our dedication to the families who welcome our puppies into their homes.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about-detail-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .about-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about-detail-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-detail-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .about-detail-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-detail-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .about-detail-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-detail-container li strong {
+    color: #2a2a2a;
+  }
+</style>

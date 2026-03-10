@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+import HighlightBox from '../components/HighlightBox.astro';
+---
+
+<BaseLayout
+  title="Health Guarantee | Harris Heritage Cavaliers"
+  description="Learn about the comprehensive 2-year health guarantee included with every Cavalier King Charles Spaniel puppy from Harris Heritage Cavaliers. OFA and DNA tested breeding dogs."
+  keywords="Cavalier health guarantee, puppy health guarantee, OFA heart testing, Cavalier breeder health testing"
+>
+  <PageHeader
+    title="Health Guarantee"
+    subtitle="Our commitment to the health and well-being of every Cavalier King Charles Spaniel puppy we breed."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Our 2-Year Health Guarantee</h2>
+      <p>At Harris Heritage Cavaliers, the health of our puppies is our top priority. Every puppy we breed comes with a written 2-year health guarantee that covers congenital and hereditary conditions.</p>
+
+      <InfoBox type="info" title="What's Covered">
+        <p>Our health guarantee covers congenital and hereditary conditions including but not limited to:</p>
+        <ul>
+          <li>Mitral Valve Disease (MVD)</li>
+          <li>Syringomyelia (SM)</li>
+          <li>Episodic Falling Syndrome</li>
+          <li>Curly Coat Dry Eye Syndrome</li>
+          <li>Hip Dysplasia</li>
+          <li>Luxating Patella</li>
+        </ul>
+      </InfoBox>
+
+      <h3>Health Testing of Our Breeding Dogs</h3>
+      <p>All of our breeding Cavalier King Charles Spaniels undergo comprehensive health testing to ensure we are producing the healthiest puppies possible:</p>
+
+      <ul>
+        <li><strong>OFA Heart Certification</strong> — Every breeding dog receives an echocardiogram performed by a board-certified veterinary cardiologist to screen for Mitral Valve Disease.</li>
+        <li><strong>CERF Eye Examination</strong> — Annual eye exams by a veterinary ophthalmologist to check for inherited eye conditions.</li>
+        <li><strong>OFA Patella Evaluation</strong> — All breeding dogs are evaluated for luxating patella to ensure healthy joints.</li>
+        <li><strong>DNA Testing</strong> — We test for Curly Coat Dry Eye Syndrome (CCDE) and Episodic Falling Syndrome (EFS) to ensure no affected puppies are produced.</li>
+      </ul>
+
+      <HighlightBox title="Before Delivery">
+        <p>Every puppy undergoes a complete veterinary examination before going to their new home. This includes a thorough physical exam, age-appropriate vaccinations, deworming, and a health certificate signed by our veterinarian.</p>
+      </HighlightBox>
+
+      <h3>Terms & Conditions</h3>
+      <p>To maintain the validity of the health guarantee, the following conditions must be met:</p>
+      <ul>
+        <li>The puppy must be examined by a licensed veterinarian within 72 hours of arrival at your home.</li>
+        <li>The puppy must receive regular veterinary care, including all recommended vaccinations and preventive treatments.</li>
+        <li>The puppy must be fed a high-quality diet appropriate for the breed.</li>
+        <li>The puppy must not be bred before 2 years of age without written consent from Harris Heritage Cavaliers.</li>
+      </ul>
+
+      <InfoBox type="tip" title="Our Commitment">
+        <p>If any covered health issue is detected within the guarantee period, we are committed to providing a fair and responsible resolution. This may include a replacement puppy or a partial refund, depending on the circumstances. We stand behind every puppy we breed.</p>
+      </InfoBox>
+
+      <p>For complete details, please review our <a href="/sales-contract">Sales Contract</a> or <a href="/contact">contact us</a> with any questions.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container li strong {
+    color: #2a2a2a;
+  }
+
+  .content-container a {
+    color: #2C3E6B;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .content-container a:hover {
+    color: #C4A882;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .content-container h3 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

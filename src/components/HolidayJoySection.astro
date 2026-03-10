@@ -1,0 +1,54 @@
+---
+// HolidayJoySection component - PetZo style CTA section
+---
+
+<section class="cta-section">
+  <div class="section-container">
+    <div class="content-wrapper">
+      <div class="cta-content">
+        <span class="section-badge">The Difference</span>
+        <h2 class="section-title">Discover the <span class="highlight">Harris Heritage</span> Difference</h2>
+        <p class="section-description">What sets us apart is our commitment to raising healthy, well-balanced puppies in a genuine family environment. Every puppy receives individual attention and love from day one.</p>
+        <div class="cta-features">
+          <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span><span class="feature-text">Raised with love in our home</span></div>
+          <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span><span class="feature-text">Complete health documentation</span></div>
+          <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span><span class="feature-text">Ongoing breeder support</span></div>
+          <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span><span class="feature-text">Ready for their forever family</span></div>
+        </div>
+        <a href="/contact" class="btn-cta">Contact Us Today<svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+      </div>
+      <div class="cta-images">
+        <div class="image-card image-main"><img src="/images/puppies/bert.jpg" alt="Cavalier puppy ready for a home" loading="lazy"></div>
+        <div class="image-card image-small-top"><img src="/images/puppies/elmo.jpg" alt="Adorable Cavalier puppy" loading="lazy"></div>
+        <div class="image-card image-small-bottom"><img src="/images/puppies/leo.jpg" alt="Cavalier puppy looking for family" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-section { display: block; font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif); background: #F9F9F6; padding: 5rem 1.5rem; position: relative; overflow: hidden; }
+  .section-container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+  .content-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .cta-content { color: #1A1A1A; }
+  .section-badge { display: inline-block; background: rgba(245, 197, 24, 0.2); color: #1A1A1A; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-size: 2.25rem; font-weight: 700; margin: 0 0 1rem; line-height: 1.2; color: #1A1A1A; }
+  .highlight { position: relative; }
+  .highlight::after { content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 6px; background: #F5C518; opacity: 0.4; z-index: -1; }
+  .section-description { font-size: 1.05rem; line-height: 1.7; color: #666; margin: 0 0 1.5rem; }
+  .cta-features { display: flex; flex-direction: column; gap: 0.875rem; margin-bottom: 2rem; }
+  .feature-item { display: flex; align-items: center; gap: 0.75rem; }
+  .feature-icon { width: 24px; height: 24px; background: #F5C518; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .feature-icon svg { width: 14px; height: 14px; fill: #1A1A1A; }
+  .feature-text { font-size: 1rem; color: #4a4a4a; }
+  .btn-cta { display: inline-flex; align-items: center; gap: 0.5rem; background: #F5C518; color: #1A1A1A; padding: 1rem 2rem; border-radius: 50px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(245, 197, 24, 0.3); text-transform: uppercase; letter-spacing: 0.5px; }
+  .btn-cta:hover { background: #D4A800; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(245, 197, 24, 0.4); color: #1A1A1A; }
+  .btn-cta svg { width: 18px; height: 18px; fill: currentColor; }
+  .cta-images { display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: 1fr 1fr; gap: 1rem; height: 400px; }
+  .image-card { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border: 3px solid transparent; transition: border-color 0.3s ease; }
+  .image-card:hover { border-color: #F5C518; }
+  .image-card img { width: 100%; height: 100%; object-fit: cover; }
+  .image-main { grid-row: 1 / -1; }
+  @media (max-width: 900px) { .content-wrapper { grid-template-columns: 1fr; gap: 2rem; } .cta-images { order: -1; height: 300px; } }
+  @media (max-width: 600px) { .cta-section { padding: 3rem 1rem; } .section-title { font-size: 1.75rem; } .cta-images { grid-template-columns: 1fr 1fr; height: 250px; } .image-main { grid-row: auto; grid-column: 1 / -1; } }
+</style>

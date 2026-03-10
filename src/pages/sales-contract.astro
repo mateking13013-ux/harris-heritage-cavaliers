@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoBox from '../components/InfoBox.astro';
+import HighlightBox from '../components/HighlightBox.astro';
+---
+
+<BaseLayout
+  title="Sales Contract | Harris Heritage Cavaliers"
+  description="Review the puppy sales contract from Harris Heritage Cavaliers. Understand the terms, health guarantee, and responsibilities when adopting a Cavalier King Charles Spaniel puppy."
+  keywords="puppy sales contract, Cavalier puppy contract, puppy adoption agreement, Harris Heritage Cavaliers contract"
+>
+  <PageHeader
+    title="Sales Contract"
+    subtitle="Our sales contract outlines the terms and responsibilities for both the breeder and the adopting family."
+  />
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>Puppy Sales Agreement</h2>
+      <p>Harris Heritage Cavaliers is committed to transparency and fairness in every adoption. Our sales contract is designed to protect both the puppy and the adopting family. Below is a summary of the key terms included in our agreement.</p>
+
+      <h3>What's Included</h3>
+      <ul>
+        <li>AKC registration paperwork (limited or full registration as agreed)</li>
+        <li>Up-to-date vaccination record</li>
+        <li>Microchip identification and registration</li>
+        <li>Complete deworming record</li>
+        <li>Veterinary health certificate</li>
+        <li>2-year written health guarantee</li>
+        <li>Welcome kit with food sample and care guide</li>
+      </ul>
+
+      <h3>Buyer Responsibilities</h3>
+      <p>By signing the sales contract, the buyer agrees to the following:</p>
+      <ul>
+        <li>Provide a safe, loving home environment for the puppy</li>
+        <li>Schedule a veterinary exam within 72 hours of receiving the puppy</li>
+        <li>Maintain regular veterinary care including vaccinations and preventive treatments</li>
+        <li>Feed a high-quality diet appropriate for Cavalier King Charles Spaniels</li>
+        <li>Never surrender the puppy to a shelter — contact us first for rehoming assistance</li>
+        <li>Spay/neuter the puppy by the agreed-upon age (if limited registration)</li>
+      </ul>
+
+      <h3>Health Guarantee Terms</h3>
+      <p>Our 2-year health guarantee covers congenital and hereditary conditions. The full details are outlined in the contract and on our <a href="/health-guarantee">Health Guarantee</a> page.</p>
+
+      <InfoBox type="warning" title="Important Notice">
+        <p>If you can no longer care for your puppy at any time during their life, you must contact Harris Heritage Cavaliers first. We will always accept a puppy back or assist in finding a suitable new home. Under no circumstances should our puppies be surrendered to a shelter or rescue.</p>
+      </InfoBox>
+
+      <h3>Payment Terms</h3>
+      <ul>
+        <li>A non-refundable deposit of $200 is required to reserve a puppy</li>
+        <li>The remaining balance is due before the puppy leaves our care</li>
+        <li>Accepted payment methods: bank transfer, cashier's check, or approved online payment</li>
+        <li>Shipping/delivery fees (if applicable) are additional and due at the time of delivery scheduling</li>
+      </ul>
+
+      <HighlightBox title="Full Contract">
+        <p>The complete sales contract will be provided to you during the adoption process. Both parties must sign the agreement before any puppy is released. If you have any questions about the contract terms, please <a href="/contact" style="color: #C4A882;">contact us</a> and we will be happy to discuss them.</p>
+      </HighlightBox>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .content-section {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+    color: #2C3E6B;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+    color: #2C3E6B;
+    margin: 2rem 0 1rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-container ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+  }
+
+  .content-container li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-container a {
+    color: #2C3E6B;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 3rem 1rem;
+    }
+
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
