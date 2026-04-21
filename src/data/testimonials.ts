@@ -17,24 +17,24 @@ export interface TestimonialPreview {
 }
 
 export const testimonialImages = [
-  '/images/testimonials/carlos.png',
-  '/images/testimonials/laura.png',
-  '/images/testimonials/david-y-ana.png',
-  '/images/testimonials/cristina.png',
-  '/images/testimonials/erik.png',
-  '/images/testimonials/carmen.png',
-  '/images/testimonials/javier.png',
-  '/images/testimonials/miguel-y-laura.png',
-  '/images/testimonials/elena.png',
-  '/images/testimonials/adrian.png',
-  '/images/testimonials/pedro-y-marcos.png',
-  '/images/testimonials/mei.png',
-  '/images/testimonials/yuki.png',
-  '/images/testimonials/roberto-y-daniel.png',
-  '/images/testimonials/pablo.png',
-  '/images/testimonials/fernando-y-teresa.png',
-  '/images/testimonials/valentina.jpg',
-  '/images/testimonials/marco.jpg',
+  '/images/testimonials/t1.jpeg',
+  '/images/testimonials/t2.jpeg',
+  '/images/testimonials/t3.jpeg',
+  '/images/testimonials/t4.jpeg',
+  '/images/testimonials/t5.jpeg',
+  '/images/testimonials/t6.jpeg',
+  '/images/testimonials/t1.jpeg',
+  '/images/testimonials/t2.jpeg',
+  '/images/testimonials/t3.jpeg',
+  '/images/testimonials/t4.jpeg',
+  '/images/testimonials/t5.jpeg',
+  '/images/testimonials/t6.jpeg',
+  '/images/testimonials/t1.jpeg',
+  '/images/testimonials/t2.jpeg',
+  '/images/testimonials/t3.jpeg',
+  '/images/testimonials/t4.jpeg',
+  '/images/testimonials/t5.jpeg',
+  '/images/testimonials/t6.jpeg',
 ];
 
 export const testimonials: Testimonial[] = [
@@ -42,7 +42,7 @@ export const testimonials: Testimonial[] = [
     name: 'Sarah M.',
     location: 'Nashville, TN',
     rating: 5,
-    image: '/images/testimonials/carlos.png',
+    image: '/images/testimonials/t1.jpeg',
     puppyName: 'Biscuit',
     text: "Biscuit is the sweetest Cavalier puppy we could have ever wished for. He arrived healthy, happy, and already socialized. The team at Harris Heritage Cavaliers guided us every step of the way with feeding and care. We couldn't be more thrilled."
   },
@@ -50,7 +50,7 @@ export const testimonials: Testimonial[] = [
     name: 'Lauren P.',
     location: 'Charlotte, NC',
     rating: 5,
-    image: '/images/testimonials/laura.png',
+    image: '/images/testimonials/t2.jpeg',
     puppyName: 'Daisy',
     text: "Daisy has the most incredible temperament. From the moment she arrived home she adapted perfectly and gets along great with the whole family. The process with Harris Heritage Cavaliers was transparent and professional from start to finish."
   },
@@ -58,7 +58,7 @@ export const testimonials: Testimonial[] = [
     name: 'David & Ana R.',
     location: 'Austin, TX',
     rating: 5,
-    image: '/images/testimonials/david-y-ana.png',
+    image: '/images/testimonials/t3.jpeg',
     puppyName: 'Cooper',
     text: "Cooper is our little Cavalier and he is pure love. We picked him up at the airport and it was love at first sight. The veterinary documentation was complete and the after-sale follow-up has been excellent."
   },
@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [
     name: 'Christina V.',
     location: 'Denver, CO',
     rating: 5,
-    image: '/images/testimonials/cristina.png',
+    image: '/images/testimonials/t4.jpeg',
     puppyName: 'Luna',
     text: "Luna is a beautiful Cavalier with an amazing personality. She's affectionate, playful, and has become the queen of the house. Harris Heritage Cavaliers made the entire process so easy and gave us really useful tips."
   },
@@ -74,7 +74,7 @@ export const testimonials: Testimonial[] = [
     name: 'Eric S.',
     location: 'Portland, OR',
     rating: 5,
-    image: '/images/testimonials/erik.png',
+    image: '/images/testimonials/t5.jpeg',
     puppyName: 'Winston',
     text: "Winston is a Cavalier with incredible energy. He's playful, loving, and has already mastered his training basics. You can tell Harris Heritage Cavaliers raises their puppies with so much love. Best decision I've ever made."
   },
@@ -82,7 +82,7 @@ export const testimonials: Testimonial[] = [
     name: 'Carmen D.',
     location: 'Scottsdale, AZ',
     rating: 5,
-    image: '/images/testimonials/carmen.png',
+    image: '/images/testimonials/t6.jpeg',
     puppyName: 'Oliver',
     text: "Oliver is a sweet Cavalier puppy who has filled our home with joy. Our kids are absolutely fascinated with him. Harris Heritage Cavaliers delivered all the paperwork and a very complete welcome kit."
   },
@@ -90,7 +90,7 @@ export const testimonials: Testimonial[] = [
     name: 'Jason T.',
     location: 'Raleigh, NC',
     rating: 5,
-    image: '/images/testimonials/javier.png',
+    image: '/images/testimonials/t1.jpeg',
     puppyName: 'Charlie',
     text: "Charlie is an incredible Cavalier with a regal presence. He's intelligent, curious, and has adapted perfectly. The entire process with Harris Heritage Cavaliers was professional and personal. I would recommend them without hesitation."
   },
@@ -98,7 +98,7 @@ export const testimonials: Testimonial[] = [
     name: 'Mike & Laura H.',
     location: 'Atlanta, GA',
     rating: 5,
-    image: '/images/testimonials/miguel-y-laura.png',
+    image: '/images/testimonials/t2.jpeg',
     puppyName: 'Penny',
     text: "Penny is our Cavalier girl and she is pure love. We picked her up at the airport and it was love at first sight. The transport was impeccable and she arrived calm and healthy. Harris Heritage Cavaliers exceeded all our expectations."
   },
@@ -106,7 +106,7 @@ export const testimonials: Testimonial[] = [
     name: 'Elena B.',
     location: 'San Diego, CA',
     rating: 5,
-    image: '/images/testimonials/elena.png',
+    image: '/images/testimonials/t3.jpeg',
     puppyName: 'Ruby',
     text: "Ruby is a gorgeous Cavalier with soft fur and captivating eyes. She's sweet, sociable, and gets along great with our other dog. The experience with Harris Heritage Cavaliers has been fantastic. Personalized attention and incredible follow-up."
   },
@@ -114,7 +114,7 @@ export const testimonials: Testimonial[] = [
     name: 'Adrian G.',
     location: 'Dallas, TX',
     rating: 5,
-    image: '/images/testimonials/adrian.png',
+    image: '/images/testimonials/t4.jpeg',
     puppyName: 'Teddy',
     text: "Teddy is a Cavalier with a charming personality. He's calm, cuddly, and loves to snuggle on the couch. The whole process was so easy thanks to Harris Heritage Cavaliers. The genetic quality and socialization are unbeatable."
   },
@@ -122,7 +122,7 @@ export const testimonials: Testimonial[] = [
     name: 'Peter & Mark A.',
     location: 'Tampa, FL',
     rating: 5,
-    image: '/images/testimonials/pedro-y-marcos.png',
+    image: '/images/testimonials/t5.jpeg',
     puppyName: 'Archie',
     text: "Archie is a Cavalier puppy full of energy and mischief. He's our first dog and Harris Heritage Cavaliers guided us through everything as first-time owners. The welcome kit was a huge help. We couldn't be more grateful."
   },
@@ -130,7 +130,7 @@ export const testimonials: Testimonial[] = [
     name: 'Mei L.',
     location: 'Seattle, WA',
     rating: 5,
-    image: '/images/testimonials/mei.png',
+    image: '/images/testimonials/t6.jpeg',
     puppyName: 'Willow',
     text: "Willow is a Cavalier with an incredible character. She's affectionate, sociable, and always seeks human contact. She arrived healthy and with all paperwork in order. Harris Heritage Cavaliers truly cares about every puppy."
   },
@@ -138,7 +138,7 @@ export const testimonials: Testimonial[] = [
     name: 'Yuki N.',
     location: 'Chicago, IL',
     rating: 5,
-    image: '/images/testimonials/yuki.png',
+    image: '/images/testimonials/t1.jpeg',
     puppyName: 'Milo & Lola',
     text: "We adopted two Cavalier puppies, Milo and Lola, and they are inseparable. They arrived in perfect condition and adapted from day one. The Harris Heritage Cavaliers team organized all the transport flawlessly. They are the joy of our home."
   },
@@ -146,7 +146,7 @@ export const testimonials: Testimonial[] = [
     name: 'Rob & Daniel F.',
     location: 'Phoenix, AZ',
     rating: 5,
-    image: '/images/testimonials/roberto-y-daniel.png',
+    image: '/images/testimonials/t2.jpeg',
     puppyName: 'Bentley',
     text: "Bentley is a Cavalier with the most beautiful coat. He's super intelligent and playful, already learned several tricks. You can see the dedication of Harris Heritage Cavaliers in every detail. The whole neighborhood stops to ask about him."
   },
@@ -154,7 +154,7 @@ export const testimonials: Testimonial[] = [
     name: 'Paul C.',
     location: 'Minneapolis, MN',
     rating: 5,
-    image: '/images/testimonials/pablo.png',
+    image: '/images/testimonials/t3.jpeg',
     puppyName: 'Bella',
     text: "Bella is a beautiful Cavalier with a sweet and adventurous character. She's my perfect companion, always by my side. Communication with Harris Heritage Cavaliers was excellent throughout the process. They sent photos and videos before pickup."
   },
@@ -162,7 +162,7 @@ export const testimonials: Testimonial[] = [
     name: 'Fernando & Teresa O.',
     location: 'Houston, TX',
     rating: 5,
-    image: '/images/testimonials/fernando-y-teresa.png',
+    image: '/images/testimonials/t4.jpeg',
     puppyName: 'Duke',
     text: "Duke is a Cavalier puppy with an incredible personality. He's affectionate with the whole family and gets along great with the kids. This is our second puppy from Harris Heritage Cavaliers and the experience has been equally wonderful."
   },
@@ -170,7 +170,7 @@ export const testimonials: Testimonial[] = [
     name: 'Valentina R.',
     location: 'Miami, FL',
     rating: 5,
-    image: '/images/testimonials/valentina.jpg',
+    image: '/images/testimonials/t5.jpeg',
     puppyName: 'Sophie',
     text: "Sophie is my little Cavalier and she is one of a kind. She has a fascinating personality and is incredibly affectionate. The adoption process was flawless and Harris Heritage Cavaliers gave me total confidence from the very first moment."
   },
@@ -178,7 +178,7 @@ export const testimonials: Testimonial[] = [
     name: 'Marco J.',
     location: 'Las Vegas, NV',
     rating: 5,
-    image: '/images/testimonials/marco.jpg',
+    image: '/images/testimonials/t6.jpeg',
     puppyName: 'Henry',
     text: "Henry is a Cavalier with an enormous heart. He's calm, loving, and has a gorgeous coat. Harris Heritage Cavaliers exceeded my expectations with their professionalism and warmth. I'm already thinking about adopting another."
   }
