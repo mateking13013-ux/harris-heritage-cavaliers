@@ -20,6 +20,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+<script is:inline>
+  // Count a lead on /thank-you ONLY if a form actually redirected here.
+  // A direct visit, a bookmark or a crawler must not register a conversion.
+  (function () {
+    var flagged = false;
+    try {
+      flagged = sessionStorage.getItem('hhc_lead') === '1';
+      if (flagged) sessionStorage.removeItem('hhc_lead');
+    } catch (e) {}
+    if (flagged && window.hhcTrack) window.hhcTrack(window.HHC_FORM_SEND_TO);
+  })();
+</script>
 </BaseLayout>
 
 <style>

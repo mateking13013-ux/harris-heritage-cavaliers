@@ -1,0 +1,61 @@
+---
+// Google Ads conversion tracking.
+// Renders nothing unless GOOGLE_ADS_ID is set in src/constants/tracking.ts,
+// so the site is safe to build and deploy before the IDs exist.
+import { GOOGLE_ADS_ID, CONVERSIONS } from '../constants/tracking';
+
+const enabled = Boolean(GOOGLE_ADS_ID);
+---
+
+{enabled && (
+  <>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}></script>
+    <script is:inline define:vars={{ GOOGLE_ADS_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GOOGLE_ADS_ID);
+    </script>
+
+    <!-- Lead conversions: text + email clicks, site-wide.
+         Delegated listeners, so links added later are covered automatically. -->
+    <script is:inline define:vars={{
+      SMS_SEND_TO: CONVERSIONS.smsClick,
+      EMAIL_SEND_TO: CONVERSIONS.emailClick,
+      FORM_SEND_TO: CONVERSIONS.formSubmit,
+      NEWSLETTER_SEND_TO: CONVERSIONS.newsletter,
+    }}>
+      (function () {
+        // Exposed for the form handlers in ContactPopup / SiteFooter / thank-you.
+        window.HHC_FORM_SEND_TO = FORM_SEND_TO;
+        window.HHC_NEWSLETTER_SEND_TO = NEWSLETTER_SEND_TO;
+
+        // Don't double-count the same visitor hammering the same button.
+        var fired = {};
+
+        function track(sendTo, key) {
+          if (!sendTo || !window.gtag) return;
+          if (fired[key]) return;
+          fired[key] = true;
+          window.gtag('event', 'conversion', { send_to: sendTo });
+        }
+
+        document.addEventListener('click', function (e) {
+          var t = e.target;
+          if (!t || !t.closest) return;
+          if (t.closest('a[href^="sms:"]'))    track(SMS_SEND_TO, 'sms');
+          if (t.closest('a[href^="mailto:"]')) track(EMAIL_SEND_TO, 'email');
+        }, true);
+
+        // Expose for the form handlers.
+        window.hhcTrack = function (sendTo) {
+          if (sendTo && window.gtag) {
+            window.gtag('event', 'conversion', { send_to: sendTo });
+          }
+        };
+      })();
+    </script>
+  </>
+)}

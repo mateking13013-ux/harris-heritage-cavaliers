@@ -252,3 +252,14 @@ section {
     display: none !important;
   }
 }
+
+/* Honeypot field for the Web One forms endpoint (forms.mails.click).
+   Bots fill it in; real visitors never see it. */
+.form-trap {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

@@ -4,6 +4,7 @@ import TopBar from '../components/TopBar.astro';
 import MainHeader from '../components/MainHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import WhatsAppChat from '../components/WhatsAppChat.astro';
+import Tracking from '../components/Tracking.astro';
 
 interface Props {
   title: string;
@@ -45,6 +46,8 @@ const {
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F436;</text></svg>">
 
   <title>{title}</title>
+
+  <Tracking />
 </head>
 <body>
   <TopBar />
